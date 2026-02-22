@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">camera-and-geoposition-react-app</string>
+    <string name="title_activity_main">camera-and-geoposition-react-app</string>
+    <string name="package_name">com.cameraandgeopositiontest.app</string>
+    <string name="custom_url_scheme">com.cameraandgeopositiontest.app</string>
+</resources>
