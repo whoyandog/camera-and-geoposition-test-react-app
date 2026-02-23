@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Sidebar from './Sidebar.tsx'
+import Sidebar from './components/Sidebar.tsx'
 import Camera from './pages/Camera.tsx'
 import Geoposition from './pages/Geoposition.tsx'
 
