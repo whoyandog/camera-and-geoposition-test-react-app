@@ -1,4 +1,5 @@
 
+import './Geoposition.css';
 
 function Geoposition() {
     return (
