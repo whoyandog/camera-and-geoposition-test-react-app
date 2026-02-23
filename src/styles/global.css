@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background: var(--bg-gradient);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,7 +58,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--color-text);
-    background-color: var(--color-bg);
+    background: var(--bg-gradient);
   }
   a:hover {
     color: var(--color-link-hover);

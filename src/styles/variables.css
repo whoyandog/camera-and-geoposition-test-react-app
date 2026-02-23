@@ -7,6 +7,10 @@
   --color-link-hover: #535bf2;
   --color-bar: #333;
 
+  --bg-gradient-dark: linear-gradient(180deg, #2b2b2b 0%, #1a1a1a 100%);
+  --bg-gradient-light: linear-gradient(135deg, #72a7f1 0%, #ee7474 100%);
+  --bg-gradient: var(--bg-gradient-dark);
+
   --button-radius: 6px;
   --button-width: 18rem;
   --gap-lg: 1rem;
@@ -15,16 +19,17 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-bg: #ffffff;
-    --color-text: #213547;
+    --color-text: #333;
     --color-link-hover: #747bff;
+    --bg-gradient: var(--bg-gradient-light);
   }
 }
 
 :root {
   --color-surface-dark: #1a1a1a;
   --color-surface-light: #f9f9f9;
-  --color-success: #10bd5e;
-  --color-success-600: #0e9e4a;
+  --color-success: #13aa57;
+  --color-success-600: #098d40;
   --color-link-alpha: #646cffaa;
   --color-react-accent: #61dafb;
   --color-react-accent-alpha: #61dafbaa;
