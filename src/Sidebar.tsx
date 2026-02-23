@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 function Sidebar() {
@@ -18,8 +19,8 @@ function Sidebar() {
 
             <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><a href="#camera">Камера</a></li>
-                    <li><a href="#geoposition">Геопозиция</a></li>
+                    <li><Link to="/camera" onClick={() => setIsOpen(false)}>Камера</Link></li>
+                    <li><Link to="/geoposition" onClick={() => setIsOpen(false)}>Геопозиция</Link></li>
                 </ul>
             </nav>
         </div>
