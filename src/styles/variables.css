@@ -28,8 +28,8 @@
 :root {
   --color-surface-dark: #1a1a1a;
   --color-surface-light: #f9f9f9;
-  --color-success: #13aa57;
-  --color-success-600: #098d40;
+  --color-success: #174ab9;
+  --color-success-600: #09428d;
   --color-link-alpha: #646cffaa;
   --color-react-accent: #61dafb;
   --color-react-accent-alpha: #61dafbaa;
