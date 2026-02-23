@@ -1,0 +1,31 @@
+:root {
+  --color-bg: #242424;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-primary: #007bff;
+  --color-primary-600: #0056b3;
+  --color-link: #646cff;
+  --color-link-hover: #535bf2;
+  --color-bar: #333;
+
+  --button-radius: 6px;
+  --button-width: 18rem;
+  --gap-lg: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #ffffff;
+    --color-text: #213547;
+    --color-link-hover: #747bff;
+  }
+}
+
+:root {
+  --color-surface-dark: #1a1a1a;
+  --color-surface-light: #f9f9f9;
+  --color-success: #10bd5e;
+  --color-success-600: #0e9e4a;
+  --color-link-alpha: #646cffaa;
+  --color-react-accent: #61dafb;
+  --color-react-accent-alpha: #61dafbaa;
+}

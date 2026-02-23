@@ -17,8 +17,11 @@ function Sidebar() {
                 <div className="bar"></div>
             </button>
 
+            <div className={`overlay ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(false)} />
+
             <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <ul>
+                    <li><Link to="/" onClick={() => setIsOpen(false)}>Главная</Link></li>
                     <li><Link to="/camera" onClick={() => setIsOpen(false)}>Камера</Link></li>
                     <li><Link to="/geoposition" onClick={() => setIsOpen(false)}>Геопозиция</Link></li>
                 </ul>

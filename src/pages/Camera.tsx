@@ -3,6 +3,9 @@ import { Camera as CapacitorCamera, CameraResultType, CameraSource } from '@capa
 import type { Photo } from '@capacitor/camera';
 
 import './Camera.css';
+import '../styles/variables.css';
+import '../styles/global.css';
+
 
 function Camera() {
     const [photo, setPhoto] = useState<Photo | null>(null);
@@ -10,10 +13,10 @@ function Camera() {
     const takePhoto = async () => {
         try {
             const permissions = await CapacitorCamera.checkPermissions();
-            if (permissions.camera !== 'granted') { 
+            if (permissions.camera !== 'granted') {
                 await CapacitorCamera.requestPermissions({ permissions: ['camera'] });
             }
-        
+
 
             const image = await CapacitorCamera.getPhoto({
                 resultType: CameraResultType.Uri,
@@ -28,10 +31,13 @@ function Camera() {
 
     return (
         <div>
-            <h1>Камера</h1>
-            <button onClick={takePhoto}>Сделать фото</button>
+            <h1 className="page-title">Камера</h1>
+
             <div className='photo-container'>
                 {photo && <img src={photo.webPath} alt="Captured" />}
+            </div>
+            <div className='button-column'>
+                <button className='nav-button' onClick={takePhoto}>Сделать фото</button>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/Sidebar.tsx'
+import Home from './pages/Home.tsx'
 import Camera from './pages/Camera.tsx'
 import Geoposition from './pages/Geoposition.tsx'
 
@@ -11,6 +12,7 @@ function App() {
         <Sidebar />
         <main className="main-content">
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/camera" element={<Camera />} />
             <Route path="/geoposition" element={<Geoposition />} />
           </Routes>

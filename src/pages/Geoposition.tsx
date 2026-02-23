@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Geolocation } from '@capacitor/geolocation';
 
 import './Geoposition.css';
+import '../styles/variables.css';
+import '../styles/global.css';
 
 function Geoposition() {
     const [position, setPosition] = useState<{ lat: number; lng: number } | null>(null);
@@ -72,10 +74,7 @@ function Geoposition() {
 
     return (
         <div>
-            <h1>Геопозиция</h1>
-            <button onClick={getCurrentPosition}>Получить текущую геопозицию</button>
-            <button onClick={startWatchingPosition} disabled={watchId !== null}>Начать отслеживание</button>
-            <button onClick={stopWatchingPosition} disabled={watchId === null}>Остановить отслеживание</button>
+            <h1 className="page-title">Геопозиция</h1>
 
             <div className='position-container'>
                 {position && (
@@ -84,6 +83,12 @@ function Geoposition() {
                         <p>Долгота: {position.lng}</p>
                     </div>
                 )}
+            </div>
+
+            <div className='button-column'>
+                <button className='nav-button' onClick={getCurrentPosition}>Получить текущую геопозицию</button>
+                <button className='nav-button' onClick={startWatchingPosition} disabled={watchId !== null}>Начать отслеживание</button>
+                <button className='nav-button' onClick={stopWatchingPosition} disabled={watchId === null}>Остановить отслеживание</button>
             </div>
         </div>
     )
