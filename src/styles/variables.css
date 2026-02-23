@@ -8,7 +8,7 @@
   --color-bar: #333;
 
   --bg-gradient-dark: linear-gradient(180deg, #2b2b2b 0%, #1a1a1a 100%);
-  --bg-gradient-light: linear-gradient(135deg, #72a7f1 0%, #ee7474 100%);
+  --bg-gradient-light: linear-gradient(135deg, #cfdcee 0%, #4d7ee7 100%);
   --bg-gradient: var(--bg-gradient-dark);
 
   --button-radius: 6px;
