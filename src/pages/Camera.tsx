@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Camera as CapacitorCamera, CameraResultType, CameraSource } from '@capacitor/camera';
 import type { Photo } from '@capacitor/camera';
+
 import './Camera.css';
 
 function Camera() {
